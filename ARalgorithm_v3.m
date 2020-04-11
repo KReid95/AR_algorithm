@@ -83,7 +83,7 @@ end
 
 F=[];
 for i=1:1:length(E(:,1))
-    if sign(E(i,2))~=sign(E(i,5)) && abs(E(i,5))>10
+    if abs(E(i,5))>10
         F=[F;E(i,:)];
     end
 end
